@@ -46,7 +46,7 @@ io.on("connection", (socket) => {
 
 
         //Emitir mensaje al cliente con el array
-        socket.emit("mensajesLogs", arrLog);
+        io.emit("mensajesLogs", arrLog);
     });
 });
 
